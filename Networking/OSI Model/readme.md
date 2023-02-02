@@ -1,6 +1,8 @@
 # OSI MODEL
 OSI stands for **Open Systems Interconnection**. It has been developed by ISO – ‘**International Organization for Standardization**‘, in the year 1984. It is a 7 layer architecture with each layer having specific functionality to perform. All these 7 layers work collaboratively to transmit the data from one person to another across the globe. 
 
+The Open Systems Interconnection (OSI) model describes seven layers that computer systems use to communicate over a network. It was the first standard model for network communications, adopted by all major computer and telecommunication companies in the early 1980s.
+
 > Prerequisite: [Basics of Computer Networking](https://www.geeksforgeeks.org/basics-computer-networking/)
 
 ![](img/computer-network-osi-model-layers.png)
@@ -60,6 +62,52 @@ Segment in Network layer is referred to as **Packet**. 
 ![](img/computer-network-osi-model-layers-packet.png)
 
 Network layer is implemented by networking devices such as routers.  
+
+**Network layer protocols**
+
+**1. IP: Internet Protocol (IPv4)**
+IPv4 is a network layer protocol that contains addressing and control information, which helps packets be routed in a network. IP works in tandem with TCP 
+to deliver data packets across the network. Under IP, each host is assigned a 32-bit address comprised of two major parts: the network number and host 
+number. The network number identifies a network and is assigned by the internet, while the host number identifies a host on the network and is assigned by 
+a network admin. The IP is only responsible for delivering the packets, and TCP helps puts them back in the right order.
+
+**Advantages**
+
+IPv4 encrypts data to ensure privacy and security.
+With IP, routing data becomes more scalable and economical.
+
+**Disadvantages**
+
+IPv4 is labor intensive, complex, and prone to errors.
+
+**2. IPv6: Internet Protocol version 6**
+IPv6 is the latest version of the Internet Protocol, a network layer protocol that possesses addressing and control information for enabling packets to be 
+routed in the network. IPv6 was created to deal with IPv4 exhaustion. It increases the IP address size from 32 bits to 128 bits to support more levels of 
+addressing.
+
+**Advantages**
+
+More efficient routing and packet processing compared to IPv4.
+Better security compared to IPv4.
+
+**Disadvantages**
+
+IPv6 is not compatible with machines that run on IPv4.
+Challenge in upgrading the devices to IPv6.
+
+**3. ICMP: Internet Control Message Protocol**
+ICMP is a network layer supporting protocol used by network devices to send error messages and operational information. ICMP messages delivered in IP 
+packets are used for out-of-band messages related to network operation or misoperation. ICMP is used to announce network errors, congestion, and timeouts, 
+as well assist in troubleshooting.
+
+**Advantages**
+
+ICMP is used to diagnose network issues.
+
+**Disadvantages**
+
+Sending a lot of ICMP messages increases network traffic.
+End users are affected if malicious users send many ICMP destination unreachable packets.
 
 ### **4\. Transport Layer (Layer 4) :**
 
@@ -136,7 +184,8 @@ The functions of the Application layer are :  
 1.  Network Virtual Terminal
 2.  FTAM-File transfer access and management
 3.  Mail Services
-4.  Directory Services
+4.  Directory Service
+
 
 **OSI model** acts as a reference model and is not implemented on the Internet because of its late invention. The current model being used is the TCP/IP model. 
 

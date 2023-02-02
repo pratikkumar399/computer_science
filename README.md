@@ -1,4 +1,7 @@
 # Computer Science
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-113-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Table of Contents
 
@@ -28,6 +31,7 @@
 - [Internet](#internet)
 - [DBMS(Database Management System)](#dbms)
 - [Cryptography](#cryptography)
+- [Theory of Computation](#theory-of-computation)
 
 
 ## Introduction
@@ -96,10 +100,21 @@ The CPU itself is made of three main components. They are:
 ## [Registers, Cache and RAM](/Registers%20Cache%20and%20RAM)
 
 ### [Register](/Registers%20Cache%20and%20RAM/readme.md#register)
-Registers are small amounts of high-speed memory contained within the CPU. Registers are basically a collection of "flip-flops" (a circuit used to store 1 bit of memory). They are used by the processor to store small amounts of data that are needed during processing. A CPU may have several sets of registers that are called "cores". Register also helps in arithmetic and logic operations. Larger amounts of data may be stored in Cache (pronounced as "cash").  This is a very fast memory that is located on the same integrated circuit as the registers. It is used for data frequently needed as the program runs. Still larger amounts of data may be stored in RAM. These are integrated circuits not part of the CPU. RAM stands for Random Access Memory. It is essentially data and instructions that have been moved from disk storage and held until the processor needs it.
+Registers are small amounts of high-speed memory contained within the CPU. Registers are basically a collection of "flip-flops" (a circuit used to store 1 bit of memory). They are used by the processor to store small amounts of data that are needed during processing. A CPU may have several sets of registers that are called "cores". Register also helps in arithmetic and logic operations. Larger amounts of data may be stored in Cache (pronounced as "cash").  This is a very fast memory that is located on the same integrated circuit as the registers. It is used for data frequently needed as the program runs. Still larger amounts of data may be stored in RAM. These are integrated circuits not part of the CPU. RAM stands for Random-Access Memory. It is essentially data and instructions that have been moved from disk storage and held until the processor needs it.
 
 ### [Cache](/Registers%20Cache%20and%20RAM/readme.md#cache)
-A cache is hardware or software that is used to store something, typically data, temporarily in a computing environment.
+Cache memory is a chip-based computer component that makes retrieving data from the computer's memory more efficient. It acts as a temporary storage area that the computer's processor can retrieve data from easily. This temporary storage area, known as a cache, is more readily available to the processor than the computer's main memory source, typically some form of DRAM.
+
+Cache memory is sometimes called CPU (central processing unit) memory because it is typically integrated directly into the CPU chip or placed on a separate chip that has a separate bus interconnect with the CPU. Therefore, it is more accessible to the processor, and able to increase efficiency, because it's physically close to the processor.
+
+In order to be close to the processor, cache memory needs to be much smaller than main memory. Consequently, it has less storage space. It is also more expensive than main memory, as it is a more complex chip that yields higher performance.
+
+What it sacrifices in size and price, it makes up for in speed. Cache memory operates between 10 to 100 times faster than RAM, requiring only a few nanoseconds to respond to a CPU request.
+
+The name of the actual hardware that is used for cache memory is high-speed static random access memory (SRAM). The name of the hardware that is used in a computer's main memory is dynamic random-access memory (DRAM).
+
+Cache memory is not to be confused with the broader term cache. Caches are temporary stores of data that can exist in both hardware and software. Cache memory refers to the specific hardware component that allows computers to create caches at various levels of the network. A cache is hardware or software that is used to store something, typically data, temporarily in a computing environment.
+
 
 ### [RAM](/Registers%20Cache%20and%20RAM/readme.md#ram)
 RAM is the hardware in a computing device where the operating system (OS), application programs and data in current use are kept so they can be quickly reached by the device's processor. RAM is the main memory in a computer. It is much faster to read from and write to than other types of storage, such as a Hard Disk Drive (HDD), a Solid State Drive (SSD), or an optical drive.
@@ -200,7 +215,7 @@ In computer science, a data structure is a data organization, management, and st
 - [Graph](Data%20Structures/readme.md#graph)
 
 ## [Algorithms](Algorithms/readme.md)
-Algorithms are the sets of steps necessary to complete computation. They are at the heart of what our devices do, and this isn’t a new concept. Since the development of math itself algorithms have been needed to help us complete tasks more efficiently, but today we’re going to take a look at a couple of modern computing problems like sorting and graph search, and show how we’ve made them more efficient so you can more easily find cheap airfare or map directions to Winterfell... or like a restaurant or something.
+Algorithms are the sets of steps necessary to complete computation. They are at the heart of what our devices do, and this isn’t a new concept. Since the development of math itself algorithms have been needed to help us complete tasks more efficiently, but today we’re going to take a look at a couple of modern computing problems like sorting and graph search and show how we’ve made them more efficient so you can more easily find cheap airfare or map directions to Winterfell... or like a restaurant or something.
 
 ### [Time Complexity](Algorithms/Time%20Complexity/readme.md)
 The time complexity of an algorithm estimates how much time the algorithm will use for some input. The idea is to represent efficiency as a function whose parameter is the size of the input. By calculating the time complexity, we can find out whether the algorithm is fast enough without implementing it.
@@ -225,7 +240,7 @@ Dynamic programming is both a mathematical optimization method and a computer pr
 
 
 
-### [Greedy Algorithms](Algorithms/Greedy%20Algorithms/README.md)
+### [Greedy Algorithms](Algorithms/Greedy%20Algorithm/readme.md)
 Greedy algorithms are a simple, intuitive class of algorithms that can be used to find the optimal solution to some optimization problems. They are called greedy because at each step they make the choice that seems best at that moment. This means that greedy algorithms do not guarantee to return the globally optimal solution, but instead make locally optimal choices in the hope of finding a global optimum. Greedy algorithms are used for optimization problems. An optimization problem can be solved using Greedy if the problem has the following property: at every step, we can make a choice that looks best at the moment, and we get the optimal solution to the complete problem.
 
 
@@ -248,21 +263,21 @@ The efficiency of an algorithm depends on these two parameters.
 
 Types Of Time Complexity :
 
-a. Best Time Complexity: The input for which algorithm takes less time or minimum time. In the best case calculate the lower bound of an algorithm. Example: The search data is present at the first location of large data in the linear search then the best case occurs.
-b. Average Time Complexity: We take all random inputs and calculate the computation time for all inputs. And then we divide it by the total number of inputs.
-c. Worst Time Complexity: Define the input for which algorithm takes a long time or maximum time. In the worst calculate the upper bound of an algorithm. Example: The search data is present at the last location of large data in the linear search then the worst case occurs.
+- *Best Time Complexity*: The input for which algorithm takes less time or minimum time. In the best case, we calculate the lower bound time complexity of an algorithm. Example: if the data to be searched is present at the first location of large data array in a linear search, then the best case occurs.
+- *Average Time Complexity*: We take all random inputs and calculate the computation time for all inputs. And then we divide it by the total number of inputs.
+- *Worst Time Complexity*: Define the input for which algorithm takes a long time or maximum time. In the worst case, we calculate the upper bound of an algorithm. Example: If the data to be searched is present at the last location of large data array in a linear search algorithm, then the worst case occurs.
 
-Some time complexities are :
+Some common time complexities are :
 
-a. O(1): This denotes the constant time. 0(1) usually means that an algorithm will have constant time regardless of the input size. Hash Maps are perfect examples of constant time.
+- **O(1)**: This denotes the constant time. O(1) usually means that an algorithm will have a constant time regardless of the input size. Hash Maps are perfect examples of constant time.
 
-b. O(log n): This denotes logarithmic time. O(log n) means to decrease with each instance for the operations. Binary search trees are the best examples of logarithmic time.
+- **O(log n)**: This denotes logarithmic time. O(log n) means to decrease with each instance for the operations. Searching for elements in Binary Search Trees (BSTs) is a good example of logarithmic time.
 
-c. O(n): This denotes linear time. O(n) means that the performance is directly proportional to the input size. In simple terms, the number of inputs and the time taken to execute those inputs will be proportional or the same. Linear search in arrays is the best example of linear time complexity.
+- **O(n)**: This denotes linear time. O(n) means that the performance is directly proportional to the size of the input. In simple terms, the number of inputs and the time taken to execute those inputs will be proportional. Linear search in arrays is a great example of linear time complexity.
 
-d. O(n*n): This denotes quadratic time. O(n2) means that the performance is directly proportional to the square of the input taken. In simple, the time taken for execution will take square times the input size. Nested loops are perfect examples of quadratic time complexity.
+- **O(n*n)**: This denotes quadratic time. O(n^2) means that the performance is directly proportional to the square of the input taken. In simple, the time taken for execution will roughly take square times the input size. Nested loops are perfect examples of quadratic time complexity.
 
-e. O(n log n): This denotes polynomial time complexity. O(n log n) means that the performance is n times that of O(log n), that is worst case complexity.
+- **O(n log n)**: This denotes polynomial time complexity. O(n log n) means that the performance is n times that of O(log n), (which is a worst case complexity). A good example would be divide and conquer algorithms such as merge sort. This algorithm first divides the set, which takes O(log n) time, then conquers and sorts through the set, which takes O(n) time- therefore, Merge sort takes O(n log n) time.
 
 | Algorithm	     |             |  Time Complexity|	       | Space Complexity |
 |   :---:        |  :---:      |  :---: 	   |   :---: 	   |   :---:          |
@@ -562,6 +577,38 @@ Cloud computing is the ability to access information and applications over the I
 Cloud computing is a type of Internet-based computing that provides shared computer processing resources and data to computers and other devices on demand.
 
 It is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction.
+ 
+ ## Top Benifits of cloud computing
+ 
+Cloud computing is a big shift from the traditional way businesses think about IT resources. Here are seven common reasons organisations are turning to cloud computing services:
+
+
+Cost
+Cloud computing eliminates the capital expense of buying hardware and software and setting up and running on-site datacenters—the racks of servers, the round-the-clock electricity for power and cooling, the IT experts for managing the infrastructure. It adds up fast.
+
+
+Speed
+Most cloud computing services are provided self service and on demand, so even vast amounts of computing resources can be provisioned in minutes, typically with just a few mouse clicks, giving businesses a lot of flexibility and taking the pressure off capacity planning.
+
+
+Global scale
+The benefits of cloud computing services include the ability to scale elastically. In cloud speak, that means delivering the right amount of IT resources—for example, more or less computing power, storage, bandwidth—right when it is needed and from the right geographic location.
+
+
+Productivity
+On-site datacenters typically require a lot of “racking and stacking”—hardware setup, software patching, and other time-consuming IT management chores. Cloud computing removes the need for many of these tasks, so IT teams can spend time on achieving more important business goals.
+
+
+Performance
+The biggest cloud computing services run on a worldwide network of secure datacenters, which are regularly upgraded to the latest generation of fast and efficient computing hardware. This offers several benefits over a single corporate datacenter, including reduced network latency for applications and greater economies of scale.
+
+
+Reliability
+Cloud computing makes data backup, disaster recovery and business continuity easier and less expensive because data can be mirrored at multiple redundant sites on the cloud provider’s network.
+
+
+Security
+Many cloud providers offer a broad set of policies, technologies and controls that strengthen your security posture overall, helping protect your data, apps and infrastructure from potential threats.
 
 ### Types of Cloud Computing Services
 - [Infrastructure as a Service (IaaS)](Cloud%20Computing/Readme.md#infrastructure-as-a-service-iaas)
@@ -574,20 +621,58 @@ Machine learning is the practice of teaching a computer to learn. The concept us
 
 ### There are three subcategories of machine learning:
 
-### -Supervised machine learning 
+### Supervised machine learning 
 In this machine learning models are trained with labeled data sets, which allow the models to learn and grow more accurate over time. For example, an algorithm would be trained with pictures of dogs and other things, all labeled by humans, and the machine would learn ways to identify pictures of dogs on its own. Supervised machine learning is the most common type used today.
 
-### -Unsupervised machine learning
+Practical applications of Supervised Learning – 
+1. **Bioinformatics:** Bioinformatics is the study of how individuals retain biological knowledge such as fingerprints, eye texture, earlobes, and so on. Mobile phones are now clever enough to comprehend our biological data and then verify us in order to increase system security.
+2. **Speech recognition:** It’s the type of program where you may convey your voice to the program, and it will identify you. The most well-known real-world gadgets are digital assistants such as Google Assistant or Siri, which respond to the term only with your voice.
+3. **Spam detection:** This tool is used to prevent fictitious or machine-based communications from being sent. Gmail includes an algorithm that learns numerous wrong terms. The Oneplus Messages App asks the user to specify which terms should be prohibited, and the keyword will prevent such texts from the app.
+4. **Object recognition for the vision:** This type of software is utilized when you have to define anything. You have a big dataset that you utilize to train the algorithm, and it can recognize a new object using this.
+
+### Unsupervised machine learning
 In Unsupervised machine learning a program looks for patterns in unlabeled data. Unsupervised machine learning can find patterns or trends that people aren’t explicitly looking for. For example, an unsupervised machine learning program could look through online sales data and identify different types of clients making purchases.
 
-### -Reinforcement machine learning
+Practical applications of unsupervised Learning
+1. **Clustering:** Clustering is the process of categorizing data into separate groups.  When we don’t know all of the details about the clusters, we can utilize unsupervised Learning to cluster them. Unsupervised Learning is used to analyze and organize data that doesn’t have pre-labeled classes or class properties. Clustering can help firms handle their data more effectively.
+Suppose you have a YouTube channel. You may have a lot of information on your subscribers. If you want to find similar subscribers, you would need to use a clustering technique.
+2. **Visualization:** The process of making diagrams, photos, graphs, charts, and so on to present information is known as visualization. Unsupervised machine learning can be used to implement this strategy.
+Suppose you are a cricket coach with information regarding your team’s performance in a tournament. You might wish to quickly locate all of the match statistics. You can pass the unlabeled and complicated data to a visualization algorithm.
+3. **Anomaly detection:** Anomaly detection is the discovery of unusual things, occurrences, or observations that raise suspicions by deviating greatly from regular data. In this situation, the system is programmed with a large number of typical cases. As a result, when it detects an unexpected occurrence, it can determine if it is an anomaly or not.
+Credit card fraud detection is a good illustration of this.This issue is now being addressed utilizing unsupervised machine learning anomaly detection approaches. To avoid fraud, the system identifies unexpected credit card transactions.
+
+### Semi-supervised machine learning
+The disadvantage of supervised learning is that it requires hand-labeling by ML specialists or data scientists, and requires a high cost to process. Unsupervised learning also has a limited spectrum for its applications. To overcome these drawbacks of supervised learning and unsupervised learning algorithms, the concept of Semi-supervised learning is introduced. Typically, this combination contains a very small amount of labeled data and a large amount of unlabelled data. The basic procedure involved is that first, the programmer will cluster similar data using an unsupervised learning algorithm and then use the existing labeled data to label the rest of the unlabelled data.
+
+Practical applications of Semi-Supervised Learning – 
+1. **Speech Analysis:** Since labeling of audio files is a very intensive task, Semi-Supervised learning is a very natural approach to solve this problem.
+2. **Internet Content:** Classification: Labeling each webpage is an impractical and unfeasible process and thus uses Semi-Supervised learning algorithms. Even the Google search algorithm uses a variant of Semi-Supervised learning to rank the relevance of a webpage for a given query.
+3. **Protein Sequence Classification:** Since DNA strands are typically very large in size, the rise of Semi-Supervised learning has been imminent in this field.
+
+### Reinforcement machine learning
 This trains machines through trial and error to take the best action by establishing a reward system. Reinforcement learning can train models to play games or train autonomous vehicles to drive by telling the machine when it made the right decisions, which helps it learn over time what actions it should take.
 
+Practical applications of Reinforcement Learning - 
+1. **Production Systems** 
+   eg. Google Cloud AutoML, Facebook Horizon, Recommendation, advertisement, search 
+2. **Autonomous Driving**
+3. **Business Management** 
+   eg. solving the vehicle routing problem, fraudulent behaviour in e-commerce, Concurrent reinforcement learning from customer interactions
+4. **Recommender systems**
+   eg. for search, recommendation, and online advertising
+   
 ### Machine learning is also associated with several other artificial intelligence subfields:
 
 ### Natural language processing
 
 Natural language processing is a field of machine learning in which machines learn to understand natural language as spoken and written by humans, instead of the data and numbers normally used to program computers. This allows machines to recognize language, understand it, and respond to it, as well as create new text and translate between languages. Natural language processing enables familiar technology like chatbots and digital assistants like Siri or Alexa.
+
+Practical applications of NLP:
+1. **Question Answering:** Question Answering focuses on building systems that automatically answer the questions asked by humans in a natural language. 
+2. **Spam Detection:** Spam detection is used to detect unwanted e-mails getting to a user's inbox.
+3. **Sentiment Analysis:** Sentiment Analysis is also known as opinion mining. It is used on the web to analyse the attitude, behaviour, and emotional state of the sender. This application is implemented through a combination of NLP (Natural Language Processing) and statistics by assigning the values to the text (positive, negative, or natural), identify the mood of the context (happy, sad, angry, etc.)
+4. **Machine Translation:** Machine translation is used to translate text or speech from one natural language to another natural language. eg. Google Translate
+5. **Spelling correction:** Microsoft Corporation provides word processor software like MS-word, PowerPoint for the spelling correction.
 
 ### Neural networks
 
@@ -595,9 +680,21 @@ Neural networks are a commonly used, specific class of machine learning algorith
 
 In an artificial neural network, cells, or nodes, are connected, with each cell processing inputs and producing an output that is sent to other neurons. Labeled data moves through the nodes, or cells, with each cell performing a different function. In a neural network trained to identify whether a picture contains a cat or not, the different nodes would assess the information and arrive at an output that indicates whether a picture features a cat.
 
+Practical applications of Neural Networks:
+1. **Stock Market Prediction:** To make a successful stock prediction in real time a Multilayer Perceptron MLP (class of feedforward artificial intelligence algorithm) is employed.  MLP comprises multiple layers of nodes, each of these layers is fully connected to the succeeding nodes. Stock’s past performances, annual returns, and non profit ratios are considered for building the MLP model.
+2. **Social Media:** Multi-layered Perceptrons forecast social media trends. It uses different training methods like Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and Mean Squared Error (MSE). MLP takes into consideration several factors like user’s favourite instagram pages, bookmarked choices etc. Post analysis of individuals' behaviours via social media networks, the data can be linked to people’s spending habits. MLP ANN is used to mine data from social media applications.  
+3. **Aerospace:** Aerospace Engineering is an expansive term that covers developments in spacecraft and aircraft. Fault diagnosis, high performance auto piloting, securing the aircraft control systems, and modeling key dynamic simulations are some of the key areas that neural networks have taken over. Time delay Neural networks can be employed for modelling non linear time dynamic systems.
+
 ### Deep learning
 
 Deep learning networks are neural networks with many layers. The layered network can process extensive amounts of data and determine the “weight” of each link in the network — for example, in an image recognition system, some layers of the neural network might detect individual features of a face, like eyes, nose, or mouth, while another layer would be able to tell whether those features appear in a way that indicates a face.  
+
+Practical applications of Deep Learning:
+1. **Automatic Text Generation –** Corpus of text is learned and from this model new text is generated, word-by-word or character-by-character.Then this model is capable of learning how to spell, punctuate, form sentences, or it may even capture the style.
+2. **Healthcare –** Helps in diagnosing various diseases and treating it.
+3. **Automatic Machine Translation –** Certain words, sentences or phrases in one language is transformed into another language (Deep Learning is achieving top results in the areas of text, images).
+4. **Image Recognition –** Recognizes and identifies peoples and objects in images as well as to understand content and context. This area is already being used in Gaming, Retail, Tourism, etc.
+5. **Predicting Earthquakes –** Teaches a computer to perform viscoelastic computations which are used in predicting earthquakes.
 
 ## [Web Technology](Web%20Technology/WebTechnology.md#web-tecnology)
 Web Technology refers to the various tools and techniques that are utilized in the process of communication between different types of devices over the internet. A web browser is used to access web pages. Web browsers can be defined as programs that display text, data, pictures, animation, and video on the Internet. Hyperlinked resources on the World Wide Web can be accessed using software interfaces provided by Web browsers.
@@ -780,9 +877,215 @@ Crypto currency is a digital currency in which encryption techniques are used to
 2. [Proof of Stake](Cryptography/CryptoCurrency/ProofOfStake/readme.md#proof-of-stake)
 
 
+
 ### _Most Popular Crypto Currency are as follows:_
 1. [Bitcoin](Cryptography/CryptoCurrency/ProofOfWork/Bitcoin/readme.md#bitcoin)
 2. [Ethereum](Cryptography/CryptoCurrency/ProofOfStake/Ethereum/readme.md#ethereum)
 3. [Litecoin](Cryptography/CryptoCurrency/ProofOfWork/Litecoin/readme.md#litecoin)
 4. [Cardano](Cryptography/CryptoCurrency/ProofOfStake/Cardano/readme.md#cardano)
 5. [Dogecoin](Cryptography/CryptoCurrency/ProofOfWork/Dogecoin/readme.md#dogecoin)
+
+
+
+## [Theory of Computation]
+In theoretical computer science and mathematics, the theory of computation is the branch that deals with what problems can be solved on a model of computation, using an algorithm, how efficiently they can be solved or to what degree (e.g., approximate solutions versus precise ones). The field is divided into three major branches: automata theory and formal languages, computability theory, and computational complexity theory, which are linked by the question: "What are the fundamental capabilities and limitations of computers?".
+
+### Automata Theory
+Automata theory is the study of abstract machines and automata, as well as the computational problems that can be solved using them. It is a theory in theoretical computer science. The word automata comes from the Greek word αὐτόματος, which means "self-acting, self-willed, self-moving". An automaton (automata in plural) is an abstract self-propelled computing device which follows a predetermined sequence of operations automatically. An automaton with a finite number of states is called a Finite Automaton (FA) or Finite-State Machine (FSM). The figure on the right illustrates a finite-state machine, which is a well-known type of automaton. This automaton consists of states (represented in the figure by circles) and transitions (represented by arrows). As the automaton sees a symbol of input, it makes a transition (or jump) to another state, according to its transition function, which takes the previous state and current input symbol as its arguments. 
+
+
+### Formal Languages
+In logic, mathematics, computer science, and linguistics, a formal language consists of words whose letters are taken from an alphabet and are well-formed according to a specific set of rules.
+
+The alphabet of a formal language consists of symbols, letters, or tokens that concatenate into strings of the language.[1] Each string concatenated from symbols of this alphabet is called a word, and the words that belong to a particular formal language are sometimes called well-formed words or well-formed formulas. A formal language is often defined by means of a formal grammar such as a regular grammar or context-free grammar, which consists of its formation rules.
+
+In computer science, formal languages are used among others as the basis for defining the grammar of programming languages and formalized versions of subsets of natural languages in which the words of the language represent concepts that are associated with particular meanings or semantics. In computational complexity theory, decision problems are typically defined as formal languages, and complexity classes are defined as the sets of the formal languages that can be parsed by machines with limited computational power. In logic and the foundations of mathematics, formal languages are used to represent the syntax of axiomatic systems, and mathematical formalism is the philosophy that all of mathematics can be reduced to the syntactic manipulation of formal languages in this way. 
+
+### Computability Theory
+Computability theory, also known as recursion theory, is a branch of mathematical logic, computer science, and the theory of computation that originated in the 1930s with the study of computable functions and Turing degrees. The field has since expanded to include the study of generalized computability and definability. In these areas, computability theory overlaps with proof theory and effective descriptive set theory. 
+
+### Computational complexity theory
+In theoretical computer science and mathematics, computational complexity theory focuses on classifying computational problems according to their resource usage, and relating these classes to each other. A computational problem is a task solved by a computer. A computation problem is solvable by mechanical application of mathematical steps, such as an algorithm.
+
+A problem is regarded as inherently difficult if its solution requires significant resources, whatever the algorithm used. The theory formalizes this intuition, by introducing mathematical models of computation to study these problems and quantifying their computational complexity, i.e., the amount of resources needed to solve them, such as time and storage. Other measures of complexity are also used, such as the amount of communication (used in communication complexity), the number of gates in a circuit (used in circuit complexity) and the number of processors (used in parallel computing). One of the roles of computational complexity theory is to determine the practical limits on what computers can and cannot do. The P versus NP problem, one of the seven Millennium Prize Problems, is dedicated to the field of computational complexity.[1]
+
+Closely related fields in theoretical computer science are analysis of algorithms and computability theory. A key distinction between analysis of algorithms and computational complexity theory is that the former is devoted to analyzing the amount of resources needed by a particular algorithm to solve a problem, whereas the latter asks a more general question about all possible algorithms that could be used to solve the same problem. More precisely, computational complexity theory tries to classify problems that can or cannot be solved with appropriately restricted resources. In turn, imposing restrictions on the available resources is what distinguishes computational complexity from computability theory: the latter theory asks what kinds of problems can, in principle, be solved algorithmically. 
+
+
+ 
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="http://safayat.me"><img src="https://avatars.githubusercontent.com/u/80335059?v=4?s=50" width="50px;" alt="Sifat"/><br /><sub><b>Sifat</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=shhossain" title="Code">💻</a> <a href="#content-shhossain" title="Content">🖋</a> <a href="https://github.com/shhossain/computer_science/commits?author=shhossain" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Sabine91"><img src="https://avatars.githubusercontent.com/u/96158726?v=4?s=50" width="50px;" alt="Yuvraj Chauhan"/><br /><sub><b>Yuvraj Chauhan</b></sub></a><br /><a href="#content-Sabine91" title="Content">🖋</a> <a href="https://github.com/shhossain/computer_science/commits?author=Sabine91" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Rajesh144142"><img src="https://avatars.githubusercontent.com/u/82487522?v=4?s=50" width="50px;" alt="Rajesh kumar halder"/><br /><sub><b>Rajesh kumar halder</b></sub></a><br /><a href="#content-Rajesh144142" title="Content">🖋</a> <a href="https://github.com/shhossain/computer_science/commits?author=Rajesh144142" title="Code">💻</a> <a href="https://github.com/shhossain/computer_science/commits?author=Rajesh144142" title="Documentation">📖</a></td>
+      <td align="center"><a href="http://ishanmondal.me"><img src="https://avatars.githubusercontent.com/u/76674591?v=4?s=50" width="50px;" alt="Ishan Mondal"/><br /><sub><b>Ishan Mondal</b></sub></a><br /><a href="#content-ishan-im" title="Content">🖋</a> <a href="https://github.com/shhossain/computer_science/commits?author=ishan-im" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Apoorva08102000"><img src="https://avatars.githubusercontent.com/u/91753868?v=4?s=50" width="50px;" alt="Apoorva08102000"/><br /><sub><b>Apoorva08102000</b></sub></a><br /><a href="#content-Apoorva08102000" title="Content">🖋</a> <a href="https://github.com/shhossain/computer_science/commits?author=Apoorva08102000" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/apoorva1823000"><img src="https://avatars.githubusercontent.com/u/71769587?v=4?s=50" width="50px;" alt="Apoorva .S. Mehta"/><br /><sub><b>Apoorva .S. Mehta</b></sub></a><br /><a href="#content-apoorva1823000" title="Content">🖋</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/utopian-coder"><img src="https://avatars.githubusercontent.com/u/66299782?v=4?s=50" width="50px;" alt="Imran Biswas"/><br /><sub><b>Imran Biswas</b></sub></a><br /><a href="#content-utopian-coder" title="Content">🖋</a> <a href="https://github.com/shhossain/computer_science/commits?author=utopian-coder" title="Code">💻</a> <a href="https://github.com/shhossain/computer_science/commits?author=utopian-coder" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/subrata-9999"><img src="https://avatars.githubusercontent.com/u/109057053?v=4?s=50" width="50px;" alt="Subrata Pramanik"/><br /><sub><b>Subrata Pramanik</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=subrata-9999" title="Code">💻</a> <a href="https://github.com/shhossain/computer_science/commits?author=subrata-9999" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://br.linkedin.com/in/samuelbratifavarin"><img src="https://avatars.githubusercontent.com/u/17628602?v=4?s=50" width="50px;" alt="Samuel Favarin"/><br /><sub><b>Samuel Favarin</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=SamuelBFavarin" title="Documentation">📖</a> <a href="https://github.com/shhossain/computer_science/commits?author=SamuelBFavarin" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/sahooabhipsa10"><img src="https://avatars.githubusercontent.com/u/99355886?v=4?s=50" width="50px;" alt="sahooabhipsa10"/><br /><sub><b>sahooabhipsa10</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=sahooabhipsa10" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Sahilrao09"><img src="https://avatars.githubusercontent.com/u/88286056?v=4?s=50" width="50px;" alt="Sahil Rao"/><br /><sub><b>Sahil Rao</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Sahilrao09" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Code-N-Bug"><img src="https://avatars.githubusercontent.com/u/103832013?v=4?s=50" width="50px;" alt="K K Chowdhury"/><br /><sub><b>K K Chowdhury</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Code-N-Bug" title="Code">💻</a> <a href="https://github.com/shhossain/computer_science/commits?author=Code-N-Bug" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://manas6699.github.io/portfolio-website3.0/"><img src="https://avatars.githubusercontent.com/u/78929050?v=4?s=50" width="50px;" alt="Manas Baroi"/><br /><sub><b>Manas Baroi</b></sub></a><br /><a href="#example-manas6699" title="Examples">💡</a> <a href="https://github.com/shhossain/computer_science/commits?author=manas6699" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/kanaujiyaaditi"><img src="https://avatars.githubusercontent.com/u/94130073?v=4?s=50" width="50px;" alt="Aditi"/><br /><sub><b>Aditi</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=kanaujiyaaditi" title="Documentation">📖</a> <a href="#content-kanaujiyaaditi" title="Content">🖋</a></td>
+      <td align="center"><a href="https://github.com/Talib-Hossain"><img src="https://avatars.githubusercontent.com/u/83373885?v=4?s=50" width="50px;" alt="Syed Talib Hossain"/><br /><sub><b>Syed Talib Hossain</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Talib-Hossain" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/JaiMehrotra02"><img src="https://avatars.githubusercontent.com/u/94130223?v=4?s=50" width="50px;" alt="Jai Mehrotra"/><br /><sub><b>Jai Mehrotra</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=JaiMehrotra02" title="Documentation">📖</a> <a href="https://github.com/shhossain/computer_science/commits?author=JaiMehrotra02" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/ShuvamBag"><img src="https://avatars.githubusercontent.com/u/82321197?v=4?s=50" width="50px;" alt="Shuvam Bag"/><br /><sub><b>Shuvam Bag</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=ShuvamBag" title="Code">💻</a> <a href="https://github.com/shhossain/computer_science/commits?author=ShuvamBag" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/AbhijitTurate"><img src="https://avatars.githubusercontent.com/u/46615905?v=4?s=50" width="50px;" alt="Abhijit Turate"/><br /><sub><b>Abhijit Turate</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=AbhijitTurate" title="Code">💻</a> <a href="https://github.com/shhossain/computer_science/commits?author=AbhijitTurate" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/Jayesh2812"><img src="https://avatars.githubusercontent.com/u/52153715?v=4?s=50" width="50px;" alt="Jayesh Deorukhkar"/><br /><sub><b>Jayesh Deorukhkar</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Jayesh2812" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/SohamDey80"><img src="https://avatars.githubusercontent.com/u/93932583?v=4?s=50" width="50px;" alt="JC Shankar"/><br /><sub><b>JC Shankar</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=SohamDey80" title="Code">💻</a> <a href="https://github.com/shhossain/computer_science/commits?author=SohamDey80" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Subrata-Pramanik"><img src="https://avatars.githubusercontent.com/u/86642230?v=4?s=50" width="50px;" alt="Subrata Pramanik"/><br /><sub><b>Subrata Pramanik</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Subrata-Pramanik" title="Code">💻</a> <a href="https://github.com/shhossain/computer_science/commits?author=Subrata-Pramanik" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/imams12"><img src="https://avatars.githubusercontent.com/u/59444865?v=4?s=50" width="50px;" alt="Imam Suyuti"/><br /><sub><b>Imam Suyuti</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=imams12" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/rahulmangla28"><img src="https://avatars.githubusercontent.com/u/93324315?v=4?s=50" width="50px;" alt="genius_koder"/><br /><sub><b>genius_koder</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=rahulmangla28" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://www.altafshaikh.ml"><img src="https://avatars.githubusercontent.com/u/26015187?v=4?s=50" width="50px;" alt="Altaf Shaikh"/><br /><sub><b>Altaf Shaikh</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=altafshaikh" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/rajdeepdas2000"><img src="https://avatars.githubusercontent.com/u/53941109?v=4?s=50" width="50px;" alt="Rajdeep Das"/><br /><sub><b>Rajdeep Das</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=rajdeepdas2000" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/its-red-eagle"><img src="https://avatars.githubusercontent.com/u/77643994?v=4?s=50" width="50px;" alt="Vikash Patel"/><br /><sub><b>Vikash Patel</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=its-red-eagle" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/alwenpy"><img src="https://avatars.githubusercontent.com/u/94129388?v=4?s=50" width="50px;" alt="Arvind Srivastav"/><br /><sub><b>Arvind Srivastav</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=alwenpy" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Naprila"><img src="https://avatars.githubusercontent.com/u/85901005?v=4?s=50" width="50px;" alt="Manish Kr Prasad"/><br /><sub><b>Manish Kr Prasad</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Naprila" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://linktr.ee/mohit_kushwaha"><img src="https://avatars.githubusercontent.com/u/73400792?v=4?s=50" width="50px;" alt="MOHIT KUMAR KUSHWAHA"/><br /><sub><b>MOHIT KUMAR KUSHWAHA</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=KimtVak8143" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/DryHitman"><img src="https://avatars.githubusercontent.com/u/116108787?v=4?s=50" width="50px;" alt="DryHitman"/><br /><sub><b>DryHitman</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=DryHitman" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/harshkulkarni17"><img src="https://avatars.githubusercontent.com/u/72391096?v=4?s=50" width="50px;" alt="Harsh Kulkarni"/><br /><sub><b>Harsh Kulkarni</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=harshkulkarni17" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/ATREAY"><img src="https://avatars.githubusercontent.com/u/66585295?v=4?s=50" width="50px;" alt="Atreay  Kukanur"/><br /><sub><b>Atreay  Kukanur</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=ATREAY" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://sreeharan.github.io"><img src="https://avatars.githubusercontent.com/u/62993067?v=4?s=50" width="50px;" alt="Sree Haran"/><br /><sub><b>Sree Haran</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=SreeHaran" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/auro-saswat-raj-d05m07y2003/"><img src="https://avatars.githubusercontent.com/u/83534307?v=4?s=50" width="50px;" alt="Auro Saswat Raj"/><br /><sub><b>Auro Saswat Raj</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=geeky-auro" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Aiyan-Faras"><img src="https://avatars.githubusercontent.com/u/55203889?v=4?s=50" width="50px;" alt="Aiyan Faras"/><br /><sub><b>Aiyan Faras</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Aiyan-Faras" title="Documentation">📖</a> <a href="https://github.com/shhossain/computer_science/commits?author=Aiyan-Faras" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/PriyanshiDavid"><img src="https://avatars.githubusercontent.com/u/71930453?v=4?s=50" width="50px;" alt="Priyanshi David"/><br /><sub><b>Priyanshi David</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=PriyanshiDavid" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/ishancode-dev"><img src="https://avatars.githubusercontent.com/u/115942220?v=4?s=50" width="50px;" alt="Ishan Mondal"/><br /><sub><b>Ishan Mondal</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=ishancode-dev" title="Documentation">📖</a></td>
+      <td align="center"><a href="http://expy.bio/NikhilShrivastava"><img src="https://avatars.githubusercontent.com/u/20610444?v=4?s=50" width="50px;" alt="Nikhil Shrivastava"/><br /><sub><b>Nikhil Shrivastava</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=NikhilShrivastava" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/deepshikha2708"><img src="https://avatars.githubusercontent.com/u/80972038?v=4?s=50" width="50px;" alt="deepshikha2708"/><br /><sub><b>deepshikha2708</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=deepshikha2708" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/rishiwardhan"><img src="https://avatars.githubusercontent.com/u/88772100?v=4?s=50" width="50px;" alt="L.RISHIWARDHAN"/><br /><sub><b>L.RISHIWARDHAN</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=rishiwardhan" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/DevTMK"><img src="https://avatars.githubusercontent.com/u/47377566?v=4?s=50" width="50px;" alt="Rahul RK"/><br /><sub><b>Rahul RK</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=DevTMK" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://www.linkedin.com/company/nscc-ggv/"><img src="https://avatars.githubusercontent.com/u/82573863?v=4?s=50" width="50px;" alt="Nishant Wankhade"/><br /><sub><b>Nishant Wankhade</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=NishantWankhade" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/pritika163"><img src="https://avatars.githubusercontent.com/u/102177744?v=4?s=50" width="50px;" alt="pritika163"/><br /><sub><b>pritika163</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=pritika163" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/AnjumanHasan"><img src="https://avatars.githubusercontent.com/u/82674743?v=4?s=50" width="50px;" alt="Anjuman Hasan"/><br /><sub><b>Anjuman Hasan</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=AnjumanHasan" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://linktr.ee/asthavarshney"><img src="https://avatars.githubusercontent.com/u/97240696?v=4?s=50" width="50px;" alt="Astha Varshney "/><br /><sub><b>Astha Varshney </b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Asthavarshneyy" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Gcettbdeveloper"><img src="https://avatars.githubusercontent.com/u/114204175?v=4?s=50" width="50px;" alt="Gcettbdeveloper"/><br /><sub><b>Gcettbdeveloper</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Gcettbdeveloper" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://elston-website.web.app"><img src="https://avatars.githubusercontent.com/u/66341506?v=4?s=50" width="50px;" alt="Elston Tan"/><br /><sub><b>Elston Tan</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Elstuhn" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/ShivanshDengla"><img src="https://avatars.githubusercontent.com/u/66008449?v=4?s=50" width="50px;" alt="Shivansh Dengla"/><br /><sub><b>Shivansh Dengla</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=ShivanshDengla" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://www.tetricz.com"><img src="https://avatars.githubusercontent.com/u/49681400?v=4?s=50" width="50px;" alt="David Daniels"/><br /><sub><b>David Daniels</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Tetricz" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/ayushverma14"><img src="https://avatars.githubusercontent.com/u/65187507?v=4?s=50" width="50px;" alt="ayushverma14"/><br /><sub><b>ayushverma14</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=ayushverma14" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://kontentkreator.tech"><img src="https://avatars.githubusercontent.com/u/70800059?v=4?s=50" width="50px;" alt="Pratik Rai"/><br /><sub><b>Pratik Rai</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=pratikkumar399" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/yash-ch"><img src="https://avatars.githubusercontent.com/u/66888087?v=4?s=50" width="50px;" alt="Yash"/><br /><sub><b>Yash</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=yash-ch" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/pranavyatnalkar"><img src="https://avatars.githubusercontent.com/u/84735288?v=4?s=50" width="50px;" alt="pranavyatnalkar"/><br /><sub><b>pranavyatnalkar</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=pranavyatnalkar" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/jeremiaaxel"><img src="https://avatars.githubusercontent.com/u/57858415?v=4?s=50" width="50px;" alt="Jeremia Axel"/><br /><sub><b>Jeremia Axel</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=jeremiaaxel" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://in.linkedin.com/in/akhil-soni-9827181a1"><img src="https://avatars.githubusercontent.com/u/58397226?v=4?s=50" width="50px;" alt="Akhil Soni"/><br /><sub><b>Akhil Soni</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=akhil-maker" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/DevZahraShahid"><img src="https://avatars.githubusercontent.com/u/111266434?v=4?s=50" width="50px;" alt="Zahra Shahid"/><br /><sub><b>Zahra Shahid</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=DevZahraShahid" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Mihir20K"><img src="https://avatars.githubusercontent.com/u/112269999?v=4?s=50" width="50px;" alt="Mihir20K"/><br /><sub><b>Mihir20K</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Mihir20K" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/computerwala"><img src="https://avatars.githubusercontent.com/u/30777038?v=4?s=50" width="50px;" alt="Aman"/><br /><sub><b>Aman</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=computerwala" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/mauriallegrettiswnat"><img src="https://avatars.githubusercontent.com/u/71467262?v=4?s=50" width="50px;" alt="Mauricio Allegretti"/><br /><sub><b>Mauricio Allegretti</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=mauriallegrettiswnat" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Bruno-Vasconcellos-Betella"><img src="https://avatars.githubusercontent.com/u/57138664?v=4?s=50" width="50px;" alt="Bruno-Vasconcellos-Betella"/><br /><sub><b>Bruno-Vasconcellos-Betella</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Bruno-Vasconcellos-Betella" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://itdadakan.site"><img src="https://avatars.githubusercontent.com/u/62456215?v=4?s=50" width="50px;" alt="Febi Arifin"/><br /><sub><b>Febi Arifin</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=febiarifin" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/dinesh9-ai"><img src="https://avatars.githubusercontent.com/u/63300423?v=4?s=50" width="50px;" alt="Dineshwar Doddapaneni"/><br /><sub><b>Dineshwar Doddapaneni</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=dinesh9-ai" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Dheerajsoni93"><img src="https://avatars.githubusercontent.com/u/82114565?v=4?s=50" width="50px;" alt="Dheeraj_Soni"/><br /><sub><b>Dheeraj_Soni</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Dheerajsoni93" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/ojash-kushwaha-791770185"><img src="https://avatars.githubusercontent.com/u/96474959?v=4?s=50" width="50px;" alt="Ojash Kushwaha"/><br /><sub><b>Ojash Kushwaha</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=OjashKush" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Sleep-lover"><img src="https://avatars.githubusercontent.com/u/82304155?v=4?s=50" width="50px;" alt="Laleet Borse"/><br /><sub><b>Laleet Borse</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Sleep-lover" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Wahaj-Raza"><img src="https://avatars.githubusercontent.com/u/103155321?v=4?s=50" width="50px;" alt="Wahaj Raza"/><br /><sub><b>Wahaj Raza</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Wahaj-Raza" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/WahajRaza1"><img src="https://avatars.githubusercontent.com/u/90937190?v=4?s=50" width="50px;" alt="WahajRaza1"/><br /><sub><b>WahajRaza1</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=WahajRaza1" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://ravencolevol.github.io"><img src="https://avatars.githubusercontent.com/u/44892121?v=4?s=50" width="50px;" alt="Ravi Lamkoti"/><br /><sub><b>Ravi Lamkoti</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=RavenColEvol" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/UperscuzziSchoolAcc"><img src="https://avatars.githubusercontent.com/u/111448336?v=4?s=50" width="50px;" alt="The One and Only Uper"/><br /><sub><b>The One and Only Uper</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=UperscuzziSchoolAcc" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/AdarshBajpai67"><img src="https://avatars.githubusercontent.com/u/95476086?v=4?s=50" width="50px;" alt="AdarshBajpai67"/><br /><sub><b>AdarshBajpai67</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=AdarshBajpai67" title="Documentation">📖</a></td>
+      <td align="center"><a href="http://deepakkharah.me"><img src="https://avatars.githubusercontent.com/u/42672761?v=4?s=50" width="50px;" alt="Deepak Kharah"/><br /><sub><b>Deepak Kharah</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Deepak-Kharah" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/sairohit360"><img src="https://avatars.githubusercontent.com/u/55144209?v=4?s=50" width="50px;" alt="sairohit360"/><br /><sub><b>sairohit360</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=sairohit360" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/sairohitzl"><img src="https://avatars.githubusercontent.com/u/86225259?v=4?s=50" width="50px;" alt="sairohitzl"/><br /><sub><b>sairohitzl</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=sairohitzl" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/RavalJinit"><img src="https://avatars.githubusercontent.com/u/72157334?v=4?s=50" width="50px;" alt="Raval Jinit"/><br /><sub><b>Raval Jinit</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=RavalJinit" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Vovka1759"><img src="https://avatars.githubusercontent.com/u/75867274?v=4?s=50" width="50px;" alt="Vovka1759"/><br /><sub><b>Vovka1759</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Vovka1759" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Nijin-P-S"><img src="https://avatars.githubusercontent.com/u/101330853?v=4?s=50" width="50px;" alt="Nijin"/><br /><sub><b>Nijin</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Nijin-P-S" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/avinilcode"><img src="https://avatars.githubusercontent.com/u/111761529?v=4?s=50" width="50px;" alt="Avinil Bedarkar"/><br /><sub><b>Avinil Bedarkar</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=avinilcode" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/FercueNat"><img src="https://avatars.githubusercontent.com/u/113535859?v=4?s=50" width="50px;" alt="FercueNat"/><br /><sub><b>FercueNat</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=FercueNat" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://khareyash05.github.io/home/"><img src="https://avatars.githubusercontent.com/u/60147732?v=4?s=50" width="50px;" alt="Yash Khare"/><br /><sub><b>Yash Khare</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=khareyash05" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/ayushanand16"><img src="https://avatars.githubusercontent.com/u/96689639?v=4?s=50" width="50px;" alt="Ayush Anand"/><br /><sub><b>Ayush Anand</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=ayushanand16" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/DharmaWarrior"><img src="https://avatars.githubusercontent.com/u/97218268?v=4?s=50" width="50px;" alt="DharmaWarrior"/><br /><sub><b>DharmaWarrior</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=DharmaWarrior" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://linktr.ee/hitarthraval"><img src="https://avatars.githubusercontent.com/u/62943532?v=4?s=50" width="50px;" alt="Hitarth Raval"/><br /><sub><b>Hitarth Raval</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=hitarthraval" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/WiemBorchani"><img src="https://avatars.githubusercontent.com/u/52404192?v=4?s=50" width="50px;" alt="Wiem Borchani "/><br /><sub><b>Wiem Borchani </b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=WiemBorchani" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Kambo2320"><img src="https://avatars.githubusercontent.com/u/98479408?v=4?s=50" width="50px;" alt="Kamden Burke"/><br /><sub><b>Kamden Burke</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Kambo2320" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/denschiro"><img src="https://avatars.githubusercontent.com/u/6161324?v=4?s=50" width="50px;" alt="denschiro"/><br /><sub><b>denschiro</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=denschiro" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/nishat48"><img src="https://avatars.githubusercontent.com/u/109063023?v=4?s=50" width="50px;" alt="Nishat"/><br /><sub><b>Nishat</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=nishat48" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/mdfaizanahmed786"><img src="https://avatars.githubusercontent.com/u/85175130?v=4?s=50" width="50px;" alt="Mohammed Faizan Ahmed"/><br /><sub><b>Mohammed Faizan Ahmed</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=mdfaizanahmed786" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/manish831"><img src="https://avatars.githubusercontent.com/u/74316266?v=4?s=50" width="50px;" alt="Manish Agrahari"/><br /><sub><b>Manish Agrahari</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=manish831" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/lokesh-katari"><img src="https://avatars.githubusercontent.com/u/111894942?v=4?s=50" width="50px;" alt="Katari Lokeswara rao"/><br /><sub><b>Katari Lokeswara rao</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=lokesh-katari" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://g.dev/ZahraShahid"><img src="https://avatars.githubusercontent.com/u/65255043?v=4?s=50" width="50px;" alt="Zahra Shahid"/><br /><sub><b>Zahra Shahid</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=ZahraShahid" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/glenntu15"><img src="https://avatars.githubusercontent.com/u/10324492?v=4?s=50" width="50px;" alt="Glenn Turner"/><br /><sub><b>Glenn Turner</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=glenntu15" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/vinayak9303"><img src="https://avatars.githubusercontent.com/u/55548976?v=4?s=50" width="50px;" alt="Vinayak godse"/><br /><sub><b>Vinayak godse</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=vinayak9303" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Satyajeetbh"><img src="https://avatars.githubusercontent.com/u/88246318?v=4?s=50" width="50px;" alt="Satyajeetbh"/><br /><sub><b>Satyajeetbh</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Satyajeetbh" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/P-Dhruva-Teja"><img src="https://avatars.githubusercontent.com/u/81409709?v=4?s=50" width="50px;" alt="Paidipelly Dhruvateja"/><br /><sub><b>Paidipelly Dhruvateja</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=P-Dhruva-Teja" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/helloausrine"><img src="https://avatars.githubusercontent.com/u/30316810?v=4?s=50" width="50px;" alt="helloausrine"/><br /><sub><b>helloausrine</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=helloausrine" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/SourabhJoshi209"><img src="https://avatars.githubusercontent.com/u/69594540?v=4?s=50" width="50px;" alt="SourabhJoshi209"/><br /><sub><b>SourabhJoshi209</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=SourabhJoshi209" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://bio.link/stefantaitano"><img src="https://avatars.githubusercontent.com/u/85418632?v=4?s=50" width="50px;" alt="Stefan Taitano"/><br /><sub><b>Stefan Taitano</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=codewithfan" title="Documentation">📖</a></td>
+      <td align="center"><a href="http://linkedin.com/in/anmspro"><img src="https://avatars.githubusercontent.com/u/33668152?v=4?s=50" width="50px;" alt="Abu Noman Md. Sakib"/><br /><sub><b>Abu Noman Md. Sakib</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=anmspro" title="Documentation">📖</a></td>
+      <td align="center"><a href="http://skyrunner360.pythonanywhere.com"><img src="https://avatars.githubusercontent.com/u/44318840?v=4?s=50" width="50px;" alt="Rishi Mathur"/><br /><sub><b>Rishi Mathur</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=skyrunner360" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Atharv-Nalwade"><img src="https://avatars.githubusercontent.com/u/98139553?v=4?s=50" width="50px;" alt="Darky001"/><br /><sub><b>Darky001</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Atharv-Nalwade" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Retr0Sushi"><img src="https://avatars.githubusercontent.com/u/110653014?v=4?s=50" width="50px;" alt="himanshu"/><br /><sub><b>himanshu</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Retr0Sushi" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/kusumita29"><img src="https://avatars.githubusercontent.com/u/99873488?v=4?s=50" width="50px;" alt="Kusumita Ghose"/><br /><sub><b>Kusumita Ghose</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=kusumita29" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/Yash1107"><img src="https://avatars.githubusercontent.com/u/76468153?v=4?s=50" width="50px;" alt="Yashvi Patel"/><br /><sub><b>Yashvi Patel</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Yash1107" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/ArshadAriff"><img src="https://avatars.githubusercontent.com/u/113685884?v=4?s=50" width="50px;" alt="ArshadAriff"/><br /><sub><b>ArshadAriff</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=ArshadAriff" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/ishashukla183"><img src="https://avatars.githubusercontent.com/u/93022787?v=4?s=50" width="50px;" alt="ishashukla183"/><br /><sub><b>ishashukla183</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=ishashukla183" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/jhuynh06"><img src="https://avatars.githubusercontent.com/u/111946833?v=4?s=50" width="50px;" alt="jhuynh06"/><br /><sub><b>jhuynh06</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/issues?q=author%3Ajhuynh06" title="Bug reports">🐛</a> <a href="https://github.com/shhossain/computer_science/commits?author=jhuynh06" title="Tests">⚠️</a></td>
+      <td align="center"><a href="http://asche.tech"><img src="https://avatars.githubusercontent.com/u/2975712?v=4?s=50" width="50px;" alt="Andrew Asche"/><br /><sub><b>Andrew Asche</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=andrewasche" title="Documentation">📖</a></td>
+      <td align="center"><a href="http://nateonmission.github.io"><img src="https://avatars.githubusercontent.com/u/37854313?v=4?s=50" width="50px;" alt="J. Nathan Allen"/><br /><sub><b>J. Nathan Allen</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/issues?q=author%3Anateonmission" title="Bug reports">🐛</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/Sayed-Afnan-Khazi"><img src="https://avatars.githubusercontent.com/u/83779299?v=4?s=50" width="50px;" alt="Sayed Afnan Khazi"/><br /><sub><b>Sayed Afnan Khazi</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Sayed-Afnan-Khazi" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Technic143"><img src="https://avatars.githubusercontent.com/u/117275755?v=4?s=50" width="50px;" alt="Technic143"/><br /><sub><b>Technic143</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=Technic143" title="Documentation">📖</a> <a href="https://github.com/shhossain/computer_science/issues?q=author%3ATechnic143" title="Bug reports">🐛</a></td>
+      <td align="center"><a href="https://github.com/snowflake1201"><img src="https://avatars.githubusercontent.com/u/56119216?v=4?s=50" width="50px;" alt="Pin Yuan Wang"/><br /><sub><b>Pin Yuan Wang</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=snowflake1201" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/BogdanOtava"><img src="https://avatars.githubusercontent.com/u/103674688?v=4?s=50" width="50px;" alt="Bogdan Otava"/><br /><sub><b>Bogdan Otava</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/commits?author=BogdanOtava" title="Code">💻</a> <a href="https://github.com/shhossain/computer_science/commits?author=BogdanOtava" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/Vedeesh6"><img src="https://avatars.githubusercontent.com/u/88491153?v=4?s=50" width="50px;" alt="Vedeesh Dwivedi"/><br /><sub><b>Vedeesh Dwivedi</b></sub></a><br /><a href="https://github.com/shhossain/computer_science/issues?q=author%3AVedeesh6" title="Bug reports">🐛</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-104-orange.svg?style=flat-square)](#contributors)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->

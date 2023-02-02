@@ -1,6 +1,8 @@
 # Introduction to Cloud Computing:
 Cloud computing is the ability to access information and applications over the Internet. Cloud computing allows users to access applications and data from any location, as long as they have an Internet connection.
 
+Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user. Large clouds often have functions distributed over multiple locations, each location being a data center.
+
 Cloud computing is a type of Internet-based computing that provides shared computer processing resources and data to computers and other devices on demand.
 
 It is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction.
@@ -102,6 +104,22 @@ There are also some disadvantages to using cloud computing services, including:
 
 ### 5. Limited control:
  When you use cloud computing services, you’re giving up some control to the provider. This can be an issue if you’re not comfortable with
+ 
+ 
+ ## Where Can I Access Cloud Computing?
+There are many cloud computing services available to individual users, but the "big three" are:-
+
+- Amazon Web Services (AWS)
+- Google Cloud Platform (GCP)
+- Microsoft Azure
+
+The service you choose will depend on:-
+
+- The scale of your business
+- Your business structure
+- How much of the work you want to outsource
+ 
+ 
 
 # Cloud Computing Usage Statistics
 According to the latest statistics, cloud computing usage is expected to continue growing at a rapid pace in the coming years. By 2025, it is estimated that cloud computing will account for more than half of all computing power used globally. This growth is being driven by a number of factors, including the increasing popularity of cloud-based services, the declining cost of cloud computing, and the increasing availability of high-speed internet connections.

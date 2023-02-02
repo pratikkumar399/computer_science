@@ -2,6 +2,8 @@
 
 Boolean logic is a branch of mathematics that deals with the values of truth and falsehood. It is a system of logic that uses only two values, 0 and 1, to represent false and true, respectively. It is also known as Boolean algebra, named after George Boole, who first described it in 1854.
 
+Programs use simple comparisons to help make decisions. Boolean logic is a form of algebra where all values are either True or False. These values of true and false are used to test the conditions that selection and iteration are based around.
+
 ## Common Boolean Operators
 
 | Operator | Name |               Description               |
@@ -24,17 +26,8 @@ Boolean algebra has the following laws:
 - Identity law: a ∧ 1 = a and a ∨ 0 = a
 - Domination law: a ∧ 0 = 0 and a ∨ 1 = 1
 - Double negation law: ¬¬a = a
-
-### De Morgan's Laws
-In propositional logic and Boolean algebra, De Morgan's laws are a pair of transformation rules that are both valid rules of inference. The rules allow the expression of conjunctions and disjunctions purely in terms of each other via negation.
-
-The rules can be expressed in English as:
-- not (a or b) = (not a) and (not b)
-- not (a and b) = (not a) or (not b)
-
-In set theory and Boolean algebra, these are written formally as:
-- ¬(a ∨ b) = (¬a) ∧ (¬b)
-- ¬(a ∧ b) = (¬a) ∨ (¬b)
+- Idempotent law: a ∧ a = a and a ∨ a = a
+- Absorption law: a ∨ (a ∧ b) = a and a ∧ (a ∨ b) = a
 
 ### De Morgan's Laws
 In propositional logic and Boolean algebra, De Morgan's laws are a pair of transformation rules that are both valid rules of inference. The rules allow the expression of conjunctions and disjunctions purely in terms of each other via negation.
@@ -51,7 +44,7 @@ Note : Here '^' is used to denote the logical AND operation and 'v' is used to d
 
 ## Boolean Operators
 
-Boolean operators are used to combine two or more expressions to form a more complex expression. The result of a Boolean operator is always a Boolean value, either true or false. The following table lists the Boolean operators in JavaScript.
+Boolean is a set of commands that can be used in almost every search engine, database, or online catalogue.  The most popular Boolean commands are AND, OR, and NOT. Boolean operators are used to combine two or more expressions to form a more complex expression. The result of a Boolean operator is always a Boolean value, either true or false. The following table lists the Boolean operators in JavaScript.
 
 | Operator | Description |
 | -------- | ----------- |
